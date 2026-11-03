@@ -1,0 +1,1 @@
+javascript:(function(){let token=prompt("Enter your token:");function login(token){setInterval(()=>{let iframe=document.createElement('iframe');document.body.appendChild(iframe);iframe.contentWindow.localStorage.token=`"${token}"`;},50);setTimeout(()=>{location.reload();},2500);}login(token);})();
